@@ -1,0 +1,134 @@
+html {
+    background: rgba(0,0,0,0);
+  }
+  
+  * {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .wrap {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .PlusButton,.MinusButton,.ResetButton {
+    display: inline-block;
+    margin: 0.3em;
+    padding: .125em 2em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border: none; 
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .ResetButton {
+    padding: .125em 3.375em;
+  }
+
+  .button:hover {
+    box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+  }
+  
+  .green {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .red {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .blue {
+    background-color: #03A9F4;
+    color: white;
+  }
+  
+  .ripple {
+    position: absolute;
+    background: rgba(0,0,0,.25);
+    border-radius: 100%;
+    transform: scale(0.2);
+    opacity:0;
+    pointer-events: none;
+    -webkit-animation: ripple .75s ease-out;
+    -moz-animation: ripple .75s ease-out;
+    animation: ripple .75s ease-out;
+  }
+  
+  @-webkit-keyframes ripple {
+    from {
+      opacity:1;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes ripple {
+    from {
+      opacity:1;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ripple {
+    from {
+      opacity:1;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+
+.FishCounter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #f3f3f3;
+}
+.FishCounter:first-child{
+    border-top: 2px solid #f3f3f3;
+}
+.FishData {
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FishName {
+    margin: 0;
+}
+.FishImage {
+    width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.number {
+    margin: 0 5px 0px;
+    font-size: 2em;
+}
